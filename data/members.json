@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ana-silva",
+    "name": "Ana Silva",
+    "role": "Product Designer",
+    "department": "Design",
+    "location": "Lisbon",
+    "email": "ana.silva@example.com",
+    "avatar": "/avatars/ana-silva.png",
+    "bio": "Ana designs our onboarding flows and runs monthly usability tests."
+  },
+  {
+    "id": "marc-dubois",
+    "name": "Marc Dubois",
+    "role": "Front-end Developer",
+    "department": "Engineering",
+    "location": "Montreal",
+    "email": "marc.dubois@example.com",
+    "avatar": "",
+    "bio": "Marc maintains the design system and cares a lot about performance."
+  },
+  {
+    "id": "priya-nair",
+    "name": "Priya Nair",
+    "role": "Engineering Manager",
+    "department": "Engineering",
+    "location": "Toronto",
+    "email": "priya.nair@example.com",
+    "avatar": "/avatars/priya-nair.png",
+    "bio": "Priya leads the platform team and mentors junior developers."
+  },
+  {
+    "id": "tom-becker",
+    "name": "Tom Becker",
+    "role": "Content Strategist",
+    "department": "Marketing",
+    "location": "Berlin",
+    "email": "tom.becker@example.com",
+    "avatar": "/avatars/tom-becker.png",
+    "bio": "Tom writes our product announcements and owns the blog calendar."
+  },
+  {
+    "id": "lea-martin",
+    "name": "Léa Martin",
+    "role": "Account Executive",
+    "department": "Sales",
+    "location": "Paris",
+    "email": "lea.martin@example.com",
+    "avatar": "",
+    "bio": "Léa works with our largest customers in Europe."
+  },
+  {
+    "id": "sam-okafor",
+    "name": "Sam Okafor",
+    "role": "UX Researcher",
+    "department": "Design",
+    "location": "London",
+    "email": "sam.okafor@example.com",
+    "avatar": "",
+    "bio": "Sam interviews customers and turns findings into design priorities."
+  },
+  {
+    "id": "jordan-lee",
+    "name": "Jordan Lee",
+    "role": "QA Engineer",
+    "department": "Engineering",
+    "location": "Singapore",
+    "email": "jordan.lee@example.com",
+    "avatar": "/avatars/jordan-lee.png",
+    "bio": "Jordan writes our end-to-end tests and runs accessibility audits before each release."
+  }
+]

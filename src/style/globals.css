@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens. Colours and spacing live in plain CSS variables;
+ * @theme below maps them to Tailwind utilities
+ * (e.g. bg-surface, text-muted, p-md, gap-lg).
+ * All text/background pairs meet WCAG 2.2 AA (4.5:1 for text, 3:1 for UI borders).
+ */
+:root {
+  /* Light theme only: keeps form controls and scrollbars light even when the OS is in dark mode. */
+  color-scheme: light;
+
+  --background: #ffffff;
+  --surface: #f5f6f8;
+  --foreground: #1a1d23;
+  --muted: #4b5563;
+  --border: #d1d5db;
+  --border-strong: #6b7280; /* form control borders need 3:1 */
+  --accent: #1d4ed8;
+  --accent-foreground: #ffffff;
+  --avatar-bg: #dbe6fe;
+  --avatar-fg: #1e3a8a;
+  --focus: #1d4ed8;
+
+  /* One colour pair per department, used for initials, badges and the profile banner. */
+  --dept-design-bg: #fce7f3;
+  --dept-design-fg: #9d174d;
+  --dept-engineering-bg: #dbeafe;
+  --dept-engineering-fg: #1e40af;
+  --dept-marketing-bg: #fef3c7;
+  --dept-marketing-fg: #92400e;
+  --dept-sales-bg: #dcfce7;
+  --dept-sales-fg: #166534;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-avatar-bg: var(--avatar-bg);
+  --color-avatar-fg: var(--avatar-fg);
+  --color-dept-design-bg: var(--dept-design-bg);
+  --color-dept-design-fg: var(--dept-design-fg);
+  --color-dept-engineering-bg: var(--dept-engineering-bg);
+  --color-dept-engineering-fg: var(--dept-engineering-fg);
+  --color-dept-marketing-bg: var(--dept-marketing-bg);
+  --color-dept-marketing-fg: var(--dept-marketing-fg);
+  --color-dept-sales-bg: var(--dept-sales-bg);
+  --color-dept-sales-fg: var(--dept-sales-fg);
+
+  --spacing-xs: var(--space-xs);
+  --spacing-sm: var(--space-sm);
+  --spacing-md: var(--space-md);
+  --spacing-lg: var(--space-lg);
+  --spacing-xl: var(--space-xl);
+
+  --radius-card: var(--radius);
+
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Tinted page so the white cards stand out. */
+body {
+  background: var(--surface);
+  color: var(--foreground);
+}
+
+/*
+ * One consistent, clearly visible focus ring for every interactive element.
+ * Inside @layer base so a component can still override it with a utility
+ * (e.g. the card draws the ring around itself instead of around its link).
+ */
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+}
